@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightgray;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.container::after{
+    position: absolute;
+    content: "";
+    inset: 0;
+    background: linear-gradient(to right, #b92b27,#435495);
+    z-index: -1;
+    transform: skewY(10deg);
+    box-shadow: 0px 0px 10px black;
+}
+.shoes{
+    width: 85%;
+    height: 75%;
+    background: linear-gradient(to right,#8a2387,#e94057,#f27121);
+    box-shadow: 0px 0px 10px black;
+    margin: auto;
+    padding: 2%;
+    margin-top: 7.5%;
+}
+.para{
+    max-width: 40%;
+    color: white;
+}
+ .para h1{
+    font-size: xx-large;
+    margin-bottom: 30px;
+ }
+ .para p{
+    font-size: large;
+    line-height: 20px;
+    margin-bottom: 50px;
+ }
+ .shoe1{
+    position: absolute;
+    right: 0px;
+    top: 10%;
+    width: 600px;
+    height: 300px;
+ }
+ .shoe1:hover{
+    position: absolute;
+    right: 0px;
+    top: 15%;
+    width: 900px;
+    height: 600px;
+ }
